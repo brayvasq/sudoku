@@ -1,5 +1,5 @@
-from Alg_Sudoku.algor_posicion_unica import crear_matriz,verificar_pos_un,crear_matriz_candidatos,obtener_candidatos_matriz,obtener_matriz_col,printmatriz
-from Alg_Sudoku.algor_linea_de_candidatos import  obtener_cuadrante_numero
+from .posicion_unica import crear_matriz,verificar_pos_un,crear_matriz_candidatos,obtener_candidatos_matriz,obtener_matriz_col,printmatriz
+from .linea_de_candidatos import  obtener_cuadrante_numero
 
 cadena_sudoku_t = "4,0,0,2,7,0,6,0,0,7,9,8,1,5,6,2,3,4,0,2,0,8,4,0,0,0,7,2,3,7,4,6,8,9,5,1,8,4,9,5,3,1,7,2,6,5,6,1,7,9,2,8,4,3,0,8,2,0,1,5,4,7,9,0,7,0,0,2,4,3,0,0,0,0,4,0,8,7,0,0,2"
 cadena_sudoku_n = "0,0,1,0,0,9,7,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,5,0,1,4,3,0,5,0,0,0,4,0,0,6,8,7,0,0,0,0,0,9,2,6,0,0,2,0,0,0,7,0,3,6,9,0,8,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,5,1,0,0,9,0,0"

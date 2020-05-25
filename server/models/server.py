@@ -1,9 +1,8 @@
 import socket
 from threading import Thread
-from Server.models.socket_controller import socket_controller
+from .controller import Controller
 
-
-class sudoku_server:
+class Server:
     def __init__(self, port, name, id_server):
         self.session_id = 1
         self.name = name
@@ -28,7 +27,7 @@ class sudoku_server:
                 try:
                     socket_c, addr = serverSocket.accept()
                     print("Conexion iniciada con",addr)
-                    client = socket_controller(socket_c, addr, self.name, self.session_id, self.id_server, self)
+                    client = Controller(socket_c, addr, self.name, self.session_id, self.id_server, self)
                     self.clients.append(client)
 
                     self.session_id += 1

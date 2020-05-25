@@ -1,11 +1,11 @@
-from Alg_Sudoku.algor_candidato_unico import candidato_unico, crear_matriz, matriz_str_to_int, printmatriz
-from Alg_Sudoku.algor_posicion_unica import obtener_posicion_ver_cadena,resolver_unica_pos
-from Alg_Sudoku.algor_linea_de_candidatos import resolv_linea_candidatos
-from Alg_Sudoku.algor_parejas_desnudas import resolv_parejas_desnudas
+from utils.candidato_unico import candidato_unico, crear_matriz, matriz_str_to_int, printmatriz
+from utils.posicion_unica import obtener_posicion_ver_cadena,resolver_unica_pos
+from utils.linea_de_candidatos import resolv_linea_candidatos
+from utils.parejas_desnudas import resolv_parejas_desnudas
 import threading
 
 
-class socket_controller:
+class Controller:
     def __init__(self, nsocket, addres, name, the_id, id_server, server):
         self.server = server
         self.the_id = the_id
